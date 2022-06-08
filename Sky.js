@@ -22,7 +22,6 @@ const myRequest = {
 
 $task.fetch(myRequest).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
-    $notify("光遇商店价格","", response.body)
     $done();
 }, reason => {
     console.log(reason.error);
