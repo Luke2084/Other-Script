@@ -6,7 +6,7 @@
    delete headers["user-agent"];
    delete headers["sec-ch-ua-full-version"];
    delete headers["sec-ch-ua-full-version-list"];
-   let ua = 'iPad';
+   let ua = 'Mac';
    
 
    headers['User-Agent'] = `Mozilla/5.0 (${ua}; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41`;
