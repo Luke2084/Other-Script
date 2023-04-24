@@ -3,5 +3,5 @@
 */
    const headers = $request.headers;
 
-   header-replace User-Agent AppleWebKit/537.36 Chrome/110.0 Safari/537.36 Edg/110.0
+   header-replace (\r\nUser-Agent:.+?)\w+\/[\d\.]+(\r\n) AppleWebKit/537.36 Chrome/110.0 Safari/537.36 Edg/110.0
    $done({ headers });
