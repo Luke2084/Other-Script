@@ -6,7 +6,6 @@
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Bing.png
 
 [Rewrite]
-^https:\/\/www\.bing\.com\/(search|new) header-replace-regex User-Agent AppleWebKit\/.*?Safari\/.*?
-
+^https:\/\/www\.bing\.com\/(search|new) header-replace-regex User-Agent Version\/[\d\.]+\s+\w+\/[\d\.] +\s+Safari\/[\d\.] 
 [MITM]
 hostname = www.bing.com
