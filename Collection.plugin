@@ -30,8 +30,7 @@ http-response ^http:\/\/wallpaper\.soutushenqi\.com\/api\/.+\/account\/token scr
 
 #************************************#
 # Spotify (不能超高音质)
-#!desc=2023.10.04部分解锁premium,音质不能设置为超高(建议登录后再打开脚本,重启app等待脚本生效)
-#!openUrl=https://github.com/app2smile/rules
+#2023.10.04部分解锁premium,音质不能设置为超高(建议登录后再打开脚本,重启app等待脚本生效)https://github.com/app2smile/rules
 # 功能: 1.去除播放广告 2.歌手/专辑列表正常展示 3.去除随机播放
 http-request ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js, timeout=10, tag=spotifyJson
 http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=spotifyProto
@@ -57,6 +56,12 @@ http-response ^https?:\/\/notability\.com\/(global|subscriptions) script-path=ht
 http-response ^https?:\/\/api\.polaxiong\.com\/.+\/payments\/(profiles\/.+\/subscription|appleiap\/receipts\/confirmation) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/pola.js, requires-body=true, tag=泼辣修图
 
 #************************************#
+# gg
+# hostname = isi.*.g*.com*
+http-response ^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=http://git.yycm.link/chxm1023/Rewrite/raw/main/gg.js, requires-body=true, tag=goodnotes6
+http-request ^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=http://git.yycm.link/chxm1023/Rewrite/raw/main/gg.js, requires-body=false, tag=goodnotes
+
+#************************************#
 # codesnackide 软件开发工具
 # hostname = api.cs-ide.io
 http-response ^https?:\/\/api\.cs-ide\.io\/purchases\/active script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/codesnackide.js, requires-body=true, tag=codesnackide
@@ -68,4 +73,4 @@ http-response ^https?:\/\/.*-slidebox-ios-prod\.cloudfunctions\.net\/api.+ scrip
 
 #************************************#
 [MITM]
-hostname = api.revenuecat.com, *.caiyunapp.com, restore-access.indream.app, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net
+hostname = api.revenuecat.com, *.caiyunapp.com, restore-access.indream.app, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*
