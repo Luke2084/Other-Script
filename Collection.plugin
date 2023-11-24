@@ -13,11 +13,12 @@
 
 
 [Script]
-#哔哩哔哩画质解锁
+#************************************#
+# 哔哩哔哩画质解锁
 # hostname = app.bilibili.com
 http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body=true, timeout=10, tag=画质解锁, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png
 
-
+#************************************#
 # Revenuecat解锁系列
 # hostname = api.revenuecat.com
 http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true, tag=Revenuecat解锁系列
@@ -76,6 +77,12 @@ http-response ^https?:\/\/api\.cs-ide\.io\/purchases\/active script-path=https:/
 # hostname = *-slidebox-ios-prod.cloudfunctions.net
 http-response ^https?:\/\/.*-slidebox-ios-prod\.cloudfunctions\.net\/api.+ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/slidebox.js, requires-body=true, tag=Slidebox-相册清理
 
+#************************************#
+# Spark
+# hostname = api.revenuecat.com
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/spark.js, requires-body=true, timeout=60 ,tag=Spark邮箱
+
+#************************************#
 #************************************#
 [MITM]
 hostname = api.revenuecat.com, *.caiyunapp.com, restore-access.indream.app, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com
