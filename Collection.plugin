@@ -8,6 +8,9 @@
 # 彩云天气广告
 ^https?:\/\/ad\.(caiyunapp|cyapi)\.(cn|com) - reject
 ^http:\/\/adx\.sogaha\.cn\/sdk\/ad\/get - reject-200
+# 精简B站内存占用
+(?=resource\?resourceUrl|upos\-sz\-staticcos) reject
+(?=。*(hdslb\.com.*(\.zip|\.mp4)))^((?!(hdslb\.com\/bfs\/app-static\/)).)*$ reject
 
 
 [Script]
