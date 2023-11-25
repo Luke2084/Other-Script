@@ -2,7 +2,7 @@
 #!desc=精简B站内存占用，需卸载重装
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
 [Rule]
-DOMAIN，upos-sz-staticcos.bilivideo.com,reject
+DOMAIN,upos-sz-staticcos.bilivideo.com,reject
 [Rewrite]
 (?=resource\?resourceUrl|upos\-sz\-staticcos) reject
 (?=。*(hdslb\.com.*(\.zip|\.mp4)))^((?!(hdslb\.com\/bfs\/app-static\/)).)*$ reject
