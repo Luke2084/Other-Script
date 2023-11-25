@@ -13,9 +13,9 @@ DOMAIN, upos-sz-staticcos.bilivideo.com, REJECT
 ^http:\/\/adx\.sogaha\.cn\/sdk\/ad\/get - reject-200
 # 精简B站内存占用
 # 需配合分流规则食用
-# DOMAIN,upos-sz-staticcos.bilivideo.com,reject
+# DOMAIN, upos-sz-staticcos.bilivideo.com, reject
 (?=resource\?resourceUrl|upos\-sz\-staticcos) reject
-(?=。*(hdslb\.com.*(\.zip|\.mp4)))^((?!(hdslb\.com\/bfs\/app-static\/)).)*$ reject
+(?=.*(hdslb\.com.*(\.zip|\.mp4)))^((?!(hdslb\.com\/bfs\/app-static\/)).)*$ reject
 
 
 [Script]
