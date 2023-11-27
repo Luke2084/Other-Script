@@ -2,7 +2,7 @@
 #!desc = 自用脚本整合
 #!author = Luke2084
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox_1.png
-
+#!date = 2023-11-27 21:48:55
 [Rule]
 # 精简B站内存占用
 DOMAIN, upos-sz-staticcos.bilivideo.com, REJECT
@@ -32,8 +32,8 @@ http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?
 
 #************************************#
 # Nicegram
-# hostname = restore-access.indream.app
-http-response ^https?:\/\/restore-access\.indream\.app\/restoreAccess script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js, requires-body=true, tag=Nicegram
+# hostname = nicegram.cloud
+http-response https://nicegram.cloud/api/v6/user/info script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Nicegram.js, requires-body=true, timeout=60 ,tag=Nicegram
 
 #************************************#
 # 搜图神器
@@ -86,4 +86,4 @@ http-response ^https?:\/\/.*-slidebox-ios-prod\.cloudfunctions\.net\/api.+ scrip
 #************************************#
 #************************************#
 [MITM]
-hostname = api.revenuecat.com, *.caiyunapp.com, restore-access.indream.app, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com
+hostname = api.revenuecat.com, *.caiyunapp.com, nicegram.cloud, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com
