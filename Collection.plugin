@@ -89,11 +89,10 @@ http-response ^https?:\/\/.*-slidebox-ios-prod\.cloudfunctions\.net\/api.+ scrip
 http-response https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js, requires-body=true, timeout=10, tag=迅雷解锁
 
 #************************************#
-# WPS解锁本地会员
-# hostname = account.wps.cn,*account.wps.com
-http-response ^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$ script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/WPSOffice/Script/WPS.js, requires-body=true, timeout=10, tag=WPS解锁本地会员
+# 
+# hostname = 
 
 #************************************#
 #************************************#
 [MITM]
-hostname = api.revenuecat.com, *.caiyunapp.com, nicegram.cloud, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com, xluser-ssl.xunlei.com, account.wps.cn, *account.wps.com
+hostname = api.revenuecat.com, *.caiyunapp.com, nicegram.cloud, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com, xluser-ssl.xunlei.com
