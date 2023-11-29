@@ -2,7 +2,7 @@
 #!desc = 自用脚本整合
 #!author = Luke2084
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox_1.png
-#!date = 2023-11-27 21:48:55
+#!date = 2023-11-29
 [Rule]
 # 精简B站内存占用
 DOMAIN, upos-sz-staticcos.bilivideo.com, REJECT
