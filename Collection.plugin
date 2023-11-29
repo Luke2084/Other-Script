@@ -84,6 +84,11 @@ http-response ^https?:\/\/api\.cs-ide\.io\/purchases\/active script-path=https:/
 http-response ^https?:\/\/.*-slidebox-ios-prod\.cloudfunctions\.net\/api.+ script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/slidebox.js, requires-body=true, tag=Slidebox-相册清理
 
 #************************************#
+# 迅雷解锁
+# hostname = xluser-ssl.xunlei.com
+http-response https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js, requires-body=true, timeout=10, tag=xunlei.js
+
+#************************************#
 #************************************#
 [MITM]
-hostname = api.revenuecat.com, *.caiyunapp.com, nicegram.cloud, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com
+hostname = api.revenuecat.com, *.caiyunapp.com, nicegram.cloud, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com, xluser-ssl.xunlei.com
