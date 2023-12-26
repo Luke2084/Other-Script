@@ -90,7 +90,7 @@ http-response https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3 script-
 #************************************#
 # Spark
 # hostname = api.revenuecat.com
-http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/spark.js， requires-body=true, timeout=60 ,tag=Spark邮箱
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/spark.js, requires-body=true, timeout=60 ,tag=Spark邮箱
 
 
 #************************************#
