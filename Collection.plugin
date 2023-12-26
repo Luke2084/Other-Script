@@ -2,7 +2,7 @@
 #!desc = 自用脚本整合
 #!author = Luke2084
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox_1.png
-#!date = 2023-11-29
+#!date = 2023-12-26
 [Rule]
 # 精简B站内存占用
 DOMAIN, upos-sz-staticcos.bilivideo.com, REJECT
@@ -22,7 +22,7 @@ DOMAIN, upos-sz-staticcos.bilivideo.com, REJECT
 #************************************#
 # 哔哩哔哩画质解锁
 # hostname = app.bilibili.com
-http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body=true, timeout=10, tag=画质解锁, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png
+http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body=true, timeout=10, tag=画质解锁, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png
 
 #************************************#
 # Revenuecat解锁系列
@@ -90,7 +90,7 @@ http-response https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3 script-
 #************************************#
 # Spark
 # hostname = api.revenuecat.com
-http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/spark.js, requires-body=true, timeout=60 ,tag=Spark邮箱
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/spark.js, requires-body=true, timeout=60, tag=Spark邮箱
 
 
 #************************************#
