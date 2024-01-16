@@ -4,18 +4,9 @@
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox_1.png
 #!date = 2023-12-26
 [Rule]
-# 精简B站内存占用
-DOMAIN, upos-sz-staticcos.bilivideo.com, REJECT
 
 [Rewrite]
-# 彩云天气广告
-^https?:\/\/ad\.(caiyunapp|cyapi)\.(cn|com) - reject
-^http:\/\/adx\.sogaha\.cn\/sdk\/ad\/get - reject-200
-# 精简B站内存占用
-# 需配合分流规则食用
-# DOMAIN, upos-sz-staticcos.bilivideo.com, reject
-(?=resource\?resourceUrl|upos\-sz\-staticcos) reject
-(?=.*(hdslb\.com.*(\.zip|\.mp4)))^((?!(hdslb\.com\/bfs\/app-static\/)).)*$ reject
+
 
 
 [Script]
@@ -88,12 +79,12 @@ http-response https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo scr
 http-response https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3 script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/PSExpress.js, requires-body=true, timeout=60, tag=PSExpress
 
 #************************************#
-# Spark
-# hostname = api.revenuecat.com
-http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/spark.js, requires-body=true, timeout=60, tag=Spark邮箱（api.revenuecat.com）
+# AppRaven
+# hostname = *appraven.net
+http-response ^https?:\/\/.*appraven\.net\/appraven\/graphql script-path=https://gist.githubusercontent.com/ddgksf2013/562f8fd6a40be92d7c8b358aa25eab3f/raw/appraven.vip.js, requires-body=true, timeout=60, tag=appraven.vip
 
 
 #************************************#
 #************************************#
 [MITM]
-hostname = *.caiyunapp.com, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com, xluser-ssl.xunlei.com, lcs-mobile-cops.adobe.io
+hostname = wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com, xluser-ssl.xunlei.com, lcs-mobile-cops.adobe.io,*appraven.net
