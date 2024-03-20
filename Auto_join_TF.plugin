@@ -1,0 +1,5 @@
+[MITM]
+hostname = testflight.apple.com
+
+[Script]
+http-request ^https:\/\/testflight\.apple\.com\/(v3\/accounts\/.*\/apps|join\/[A-Za-z0-9]+)$ tag=TF获取参数, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/AutoJoinTF.js
