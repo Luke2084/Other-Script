@@ -1,3 +1,10 @@
+#!name = TF获取参数
+#!desc = TF自动加入获取参数
+#!author = Luke2084
+#!icon=https://raw.githubusercontent.com/githubdulong/Script/master/Images/testflight.png
+#!date = 2024-03-20
+
+
 [MITM]
 hostname = testflight.apple.com
 
