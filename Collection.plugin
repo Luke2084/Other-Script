@@ -79,12 +79,18 @@ http-response https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo scr
 http-response https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3 script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/PSExpress.js, requires-body=true, timeout=60, tag=PSExpress
 
 #************************************#
-# AppRaven
-# hostname = *appraven.net
-http-response ^https?:\/\/.*appraven\.net\/appraven\/graphql script-path=https://gist.githubusercontent.com/ddgksf2013/562f8fd6a40be92d7c8b358aa25eab3f/raw/appraven.vip.js, requires-body=true, timeout=60, tag=appraven.vip
+# 
+# 
+
+
+#************************************#
+# Documents
+# hostname = license.pdfexpert.com
+http-request ^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/documents.js
+
 
 
 #************************************#
 #************************************#
 [MITM]
-hostname = wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com, xluser-ssl.xunlei.com, lcs-mobile-cops.adobe.io,*appraven.net
+hostname = wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com, xluser-ssl.xunlei.com, lcs-mobile-cops.adobe.io,license.pdfexpert.com
