@@ -2,7 +2,7 @@
 #!desc = 自用脚本整合
 #!author = Luke2084
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox_1.png
-#!date = 2024-05-03
+#!date = 2024-06-10
 [Rule]
 
 [Rewrite]
@@ -17,8 +17,9 @@ http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? script-pat
 
 #************************************#
 # Revenuecat解锁系列
-# hostname = 
-
+# hostname = api.revenuecat.com
+http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true, tag=Revenuecat解锁系列
+http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=false, tag=Reheji
 
 #************************************#
 # 搜图神器
@@ -93,4 +94,4 @@ http-request ^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscript
 #************************************#
 #************************************#
 [MITM]
-hostname = wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com, xluser-ssl.xunlei.com, lcs-mobile-cops.adobe.io,license.pdfexpert.com
+hostname = api.revenuecat.com, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com, xluser-ssl.xunlei.com, lcs-mobile-cops.adobe.io,license.pdfexpert.com
