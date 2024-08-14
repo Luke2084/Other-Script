@@ -94,9 +94,6 @@ DOMAIN, open-pixon.ads-pixiv.net, REJECT
 # 中国移动开屏广告
 ^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(explorePage\/getAdverList|init\/startInit) reject
 
-# 威锋 - 开屏广告
-^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/yesList reject
-
 # 闲鱼 - 开屏广告
 ^https:\/\/iyes\.youku\.com\/uts\/v1\/start\/ reject-dict
 # 闲鱼 - 底部浮层发布球
@@ -105,13 +102,6 @@ DOMAIN, open-pixon.ads-pixiv.net, REJECT
 # 猫眼 - 移除开屏广告、红包悬浮
 ^https:\/\/p0\.pipi\.cn\/(adAdmin|mediaplus\/maoyantong_ads_fe)\/\w+\.jpg\?imageMogr2\/quality\/ reject-dict
 ^https:\/\/p0\.pipi\.cn\/(adAdmin|mediaplus\/maoyantong_ads_fe)\/\w+\.(jpg|png)\?imageMogr2\/thumbnail\/(860x0|!165x165|!1049x1169) reject-dict
-
-# 下厨房 - 开屏广告
-^https:\/\/api\.xiachufang\.com\/v2\/ad\/ reject-dict
-
-# 懒饭 - 开屏广告
-^https:\/\/lanfanapp\.com\/api\/v1\/ads\/ reject-dict
-
 #向日葵 #开屏广告 #主机名client-api-v2.oray.com
 ^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_STARTUP reject-dict
 #向日葵 #首页文字广告
@@ -143,4 +133,4 @@ DOMAIN, open-pixon.ads-pixiv.net, REJECT
 
 
 [Mitm]
-hostname = api.zcool.com.cn, acs.m.goofish.com, acs.m.taobao.com, api-mifit*.huami.com, api-mifit-cn2.huami.com, api-mifit.huami.com, api-overmind.youdao.com, api.ahmobile.cn, api.angkeduo.com, api.jr.mi.com, api.m.mi.com, api.pinduoduo.com, api.wfdata.club, cdke.youdao.com, conf-darwin.xycdn.com, dict.youdao.com, ecard.shenzhentong.com, ether-pack.pangolin-sdk-toutiao.com, gromore.pangolin-sdk-toutiao.com, gw.alicdn.com, gw.chuangkit.com, hfapp-service.qweather.net, home.mi.com, home.umetrip.com, iyes.youku.com, lfd?-analytics.bytescm.com, lfd?-cdn-tos.bytescm.com, m.qianbao.qq.com, mob.mddcloud.com.cn, mobads-pre-config.cdn.bcebos.com, p0.pipi.cn, qiye.gaoding.com, sdk1xyajs.data.kuiniuca.com, sfd?-fe-tos.pglstatp-toutiao.com, sfo.mddcloud.com.cn, shopapi.io.mi.com, shealthyapi.senssun.com, t-dsp.pinduoduo.com, toblog.ctobsnssdk.com, tower.ubixioe.com, umerp.umetrip.com, us.l.qq.com, lanfanapp.com, api.xiachufang.com, info.mina.xiaoaisound.com, api.xiangji.qq.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com, images.pinduoduo.com, client.app.coc.10086.cn, cdn.cmgadx.com, qadx.qinlinad.com, watch.iot.mi.com, d.socdm.com
+hostname = acs.m.goofish.com, acs.m.taobao.com, api-mifit*.huami.com, api-mifit-cn2.huami.com, api-mifit.huami.com, api.angkeduo.com, api.jr.mi.com, api.m.mi.com, api.pinduoduo.com, gw.alicdn.com, home.mi.com, home.umetrip.com, iyes.youku.com, m.qianbao.qq.com, p0.pipi.cn, shopapi.io.mi.com, t-dsp.pinduoduo.com,  umerp.umetrip.com, us.l.qq.com, info.mina.xiaoaisound.com,  t-dsp.pinduoduo.com, images.pinduoduo.com, images.pinduoduo.com, client.app.coc.10086.cn, watch.iot.mi.com, d.socdm.com
