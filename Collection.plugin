@@ -2,7 +2,7 @@
 #!desc = 自用脚本整合
 #!author = Luke2084
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox_1.png
-#!date = 2024-06-10
+#!date = 2024-09-06
 [Rule]
 
 [Rewrite]
