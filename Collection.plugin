@@ -59,10 +59,6 @@ http-response ^https?:\/\/api\.polaxiong\.com\/.+\/payments\/(profiles\/.+\/subs
 http-response ^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=http://git.yycm.link/chxm1023/Rewrite/raw/main/gg.js, requires-body=true, tag=goodnotes6
 http-request ^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=http://git.yycm.link/chxm1023/Rewrite/raw/main/gg.js, requires-body=false, tag=goodnotes
 
-#************************************#
-# Codesnack ide 软件开发工具
-# hostname = api.cs-ide.io
-http-response ^https?:\/\/api\.cs-ide\.io\/purchases\/active script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/codesnackide.js, requires-body=true, tag=codesnackide
 
 #************************************#
 # Slidebox相册清理
@@ -74,10 +70,6 @@ http-response ^https?:\/\/.*-slidebox-ios-prod\.cloudfunctions\.net\/api.+ scrip
 # hostname = xluser-ssl.xunlei.com
 http-response https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js, requires-body=true, timeout=10, tag=迅雷解锁
 
-#************************************#
-# PSExpress
-# hostname = lcs-mobile-cops.adobe.io
-http-response https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3 script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/PSExpress.js, requires-body=true, timeout=60, tag=PSExpress
 
 #************************************#
 # 
@@ -94,4 +86,4 @@ http-request ^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscript
 #************************************#
 #************************************#
 [MITM]
-hostname = api.revenuecat.com, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, api.cs-ide.io, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com, xluser-ssl.xunlei.com, lcs-mobile-cops.adobe.io,license.pdfexpert.com
+hostname = api.revenuecat.com, wallpaper.soutushenqi.com, spclient.wg.spotify.com, drive*.quark.cn, *.wps.cn, notability.com, api.polaxiong.com, *-slidebox-ios-prod.cloudfunctions.net, isi.*.g*.com*, app.bilibili.com, xluser-ssl.xunlei.com,license.pdfexpert.com
