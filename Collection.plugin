@@ -13,7 +13,7 @@
 #************************************#
 # 哔哩哔哩画质解锁
 # hostname = app.bilibili.com
-http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body=true, timeout=10, tag=画质解锁, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png
+http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? script-path=https://kelee.one/Resource/Script/Bilibili/Bilibili_remove_ads.js, requires-body=true, timeout=10, tag=画质解锁, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png
 
 #************************************#
 # Revenuecat解锁系列
